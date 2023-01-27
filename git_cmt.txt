@@ -1,0 +1,41 @@
+-----------------       git comments ---------------------------------
+1 . git init
+2 . git add filename
+3 . git commit -m "message"
+4 . git remote add origin <https:// remote location>
+5 . git push -u origin master
+
+
+
+
+
+git status  =>  showing  the status 
+git add .    =>  adding all the files at the same time
+git log       =>  show the commit id
+git checkout -b 'myworking'  => create the clone file    for master copy
+             b -> branch
+			 myworking ->  branch name
+			 
+git ccheckout master  => goto the master file
+git checkout myworkings => goto clone file
+
+------merge file-----
+goto git checkout master
+         (or)                                          => merge the file
+git merge myworkings            		 
+
+
+
+
+            --------------------------------   Error  ------------------------------			 
+error : 
+           remote origin already exist
+solution : 			
+			git remote rm origin
+
+error : 
+            fatal: Unable to create '/home/arigaran/eclipse-workspace/.git/index.lock': File exists.
+
+solution : 
+              rm -f ./.git/index.lock
+			

@@ -7,8 +7,19 @@
 
 
 
+git reset file1.txt =>remove the track file to untrack file
+git log --online    =>get the log id in 1 line
+git reset 2ade984  => remove the track file to untrack file
 
+        -------------   RESET   ---------------
+        soft
+        mixed 
+        hard
 
+git reset --soft 2ade984
+ls -al   =>list the elements
+git reset --mixed 2ade984
+git reset --hard 2ade984
 git status  =>  showing  the status 
 git add .    =>  adding all the files at the same time
 git log       =>  show the commit id
@@ -19,7 +30,7 @@ git checkout -b 'myworking'  => create the clone file    for master copy
 git ccheckout master  => goto the master file
 git checkout myworkings => goto clone file
 
-------merge file-----
+                        ------merge file-----
 goto git checkout master
          (or)                                          => merge the file
 git merge myworkings            		 

@@ -27,7 +27,7 @@ git checkout -b 'myworking'  => create the clone file    for master copy
              b -> branch
 			 myworking ->  branch name
 			 
-git ccheckout master  => goto the master file
+git checkout master  => goto the master file
 git checkout myworkings => goto clone file
 
                         ------merge file-----
@@ -49,4 +49,19 @@ error :
 
 solution : 
               rm -f ./.git/index.lock
-			
+		
+error :   	arigaran@arigaran-Lenovo-E41-25:~/eclipse-workspace$ git push -u origin master
+		Username for 'https://github.com': sarigaran
+		Password for 'https://sarigaran@github.com': 
+		To https://github.com/sarigaran/java
+		 ! [rejected]        master -> master (non-fast-forward)
+		error: failed to push some refs to 'https://github.com/sarigaran/java'
+		hint: Updates were rejected because the tip of your current branch is behind
+		hint: its remote counterpart. Integrate the remote changes (e.g.
+		hint: 'git pull ...') before pushing again.
+		hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+		arigaran@arigaran-Lenovo-E41-25:~/eclipse-workspace$ git push -f origin mas		
+solution    :
+       		git push -f origin master              =>f means force
+		
+		
